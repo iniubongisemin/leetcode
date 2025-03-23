@@ -28,7 +28,7 @@ def python_version():
     import sys
     print("PYTHON VERSION", sys.version)
     
-python_version()
+# python_version()
 
 
 """
@@ -39,5 +39,35 @@ Current date and time:
 def current_date():
     from datetime import datetime
     print("Current date and time:\n", datetime.now().replace(microsecond=0))
-current_date()
+# current_date()
 
+
+"""
+4. Circle Area Calculator
+Write a Python program that calculates the area of a circle based on the radius entered by the user.
+Sample Output :
+r = 1.1
+Area = 3.8013271108436504
+"""
+from math import pi
+def area_of_circle(radius:int):
+    area = pi * radius ** 2
+    print(pi)
+    print(area)
+    
+# area_of_circle(5)
+
+"""
+5. Reverse Full Name
+Write a Python program that accepts the user's first and last name and prints them in reverse order with a space between them.
+"""
+def reverse_full_name():
+    first_name = input("Please input your first name: ")
+    last_name = input("Please input your first name: ")
+    name = [first_name, last_name]
+    print(str(name.reverse))
+reverse_full_name()
+
+
+
+     
